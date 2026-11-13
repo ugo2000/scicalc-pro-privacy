@@ -24,6 +24,16 @@ The URL must be publicly reachable without login — do not use a private repo.
 All pages are single-file HTML with inline CSS and no external dependencies.
 `prefers-color-scheme: light` is supported for readability.
 
+## Why the URL matters (Play rejection, 2026-11-13)
+
+Play rejected the submission because the Console field pointed at
+`https://zhuaotech.com/privacy-policy/` — the **company website** policy (contact form,
+cookies, AdSense) with no reference to the app or the developer. The correct value for
+Play Console is the GitHub Pages URL above. Section 0 of both policy pages now lists every
+identifier that must match the store listing: app name, package name, developer
+**Jiangbiao Yu**, legal entity, website and contact email. It also states explicitly that
+the website policy does not govern the app. The app links to this page from its About screen.
+
 ## Content rules (keep these true)
 
 - The app has **no accounts, no registration, no analytics SDK**; settings, favourites and history stay on-device.
